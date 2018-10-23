@@ -1,0 +1,43 @@
+package utility;
+
+public class Pessoa
+{
+
+	String nome;
+	int rg, cpf;
+	double peso, altura;
+
+	public Pessoa()
+	{
+		nome = "";
+		rg = 0;
+		cpf = 0;
+	}
+
+	public Pessoa(String nome, int rg, int cpf)
+	{
+		this.nome = nome;
+		this.rg = rg;
+		this.cpf = cpf;
+	}
+
+	double calcularIMC()
+	{
+		return (peso / Math.pow(altura, 2));
+	}
+
+	void classificaIMC() {
+		double imc;
+		String classe;
+		imc = calcularIMC();
+		
+		if(imc <= 19) {
+			classe = "Abaixo do peso";
+		}
+		else if(imc <=25) {
+			classe = "Peso ideal";
+		}
+		else if(imc)
+	}
+	
+}

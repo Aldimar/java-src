@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package utility;
+
+/**
+ * @author aldimar.junior
+ *
+ */
+public class Calculadora
+{
+
+	double num1
+	double num2
+	
+}

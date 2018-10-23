@@ -1,0 +1,19 @@
+package utility;
+
+import java.util.Scanner;
+
+public class PessoaPrincipal
+{
+
+	public static void main(String[] args)
+	{
+	
+		Scanner input = new Scanner(System.in);
+		Pessoa pessoa1 = new Pessoa();
+		Pessoa pessoa2 = new Pessoa();
+		
+		System.out.println("Nome da Pessoa : ");
+		
+	}
+
+}

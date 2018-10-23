@@ -1,0 +1,47 @@
+package utility;
+
+public class ContaCorrente
+{
+
+	String name;
+	String n_account;
+	double balance;
+
+	double withdraw()
+	{
+		
+		double withdraw_value = 0.0;
+		return (balance - withdraw_value);
+		
+	}
+
+	double deposit()
+	{
+		
+		double deposit_value = 0.0;
+		return (balance + deposit_value);
+		
+	}
+
+	double checkBalance()
+	{
+		
+		return balance;
+		
+	}
+
+	String checkName()
+	{
+		
+		return name;
+		
+	}
+	
+	String changeName() 
+	{
+		String newName = "";
+		newName = name;
+		return newName;
+	}
+
+}

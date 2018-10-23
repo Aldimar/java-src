@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package utility;
+
+/**
+ * @author aldimar.junior
+ *
+ */
+public class Banco
+{
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args)
+	{
+		
+		ContaCorrente conta = new ContaCorrente();
+		
+		System.out.printf("Seu saldo é: %.2f\n", conta.checkBalance());
+		conta.withdraw(200);
+		System.out.printf("Seu saldo apos saque é: %.2f\n", conta.checkBalance());
+		conta.deposit(300);
+		System.out.printf("Seu saldo apos deposito é: %.2f\n", conta.checkBalance());
+		System.out.println(conta.checkName());
+	}
+
+}

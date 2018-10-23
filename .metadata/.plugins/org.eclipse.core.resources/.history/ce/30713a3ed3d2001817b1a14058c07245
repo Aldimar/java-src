@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package utility;
+
+/**
+ * @author aldimar.junior
+ *
+ */
+public class Calculadora
+{
+
+	public double sum(double x, double y) 
+	{
+		return sum();
+	}
+	
+}

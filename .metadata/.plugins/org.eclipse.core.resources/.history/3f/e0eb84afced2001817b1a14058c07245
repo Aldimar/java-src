@@ -1,0 +1,43 @@
+package utility;
+
+import java.util.Scanner;
+
+public class PessoaPrincipal
+{
+
+	public static void main(String[] args)
+	{
+
+		@SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
+
+		Pessoa pessoa1 = new Pessoa();
+		Pessoa pessoa2 = new Pessoa();
+
+		// Pessoa 1
+		System.out.println("Nome da 1ª Pessoa: ");
+		pessoa1.nome = input.next();
+
+		System.out.println("Peso da 1ª Pessoa (Kg): ");
+		pessoa1.peso = input.nextDouble();
+
+		System.out.println("Altura da 1ª Pessoa (m): ");
+		pessoa1.altura = input.nextDouble();
+		//--------------------------------------------//
+
+		// Pessoa 2
+		System.out.println("Nome da 2ª Pessoa: ");
+		pessoa2.nome = input.next();
+
+		System.out.println("Peso da 2ª Pessoa (Kg): ");
+		pessoa2.peso = input.nextDouble();
+
+		System.out.println("Altura da 2ª Pessoa (m): ");
+		pessoa2.altura = input.nextDouble();
+		//--------------------------------------------//
+		
+		System.out.printf("IMC da 1ª pessoa = %.2f\nEssa pessoa está: %s", pessoa1.calcularIMC(), pessoa1.classificaIMC());
+		
+	} // Fim do metodo main
+
+} // Fim da classe PessoaPrincipal
