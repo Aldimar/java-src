@@ -7,7 +7,6 @@ public class OlaMundo {
 		
 		Casas bolado = new Casas();
 		
-		@SuppressWarnings("resource")
 		Scanner s = new Scanner(System.in);
 //		
 //		System.out.println("Hello, World");
