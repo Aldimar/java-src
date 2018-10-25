@@ -1,46 +1,81 @@
 package utility;
 
+
+// Bank ----------------------------------------------
 public class ContaCorrente
 {
 
-	String name = "Aderbaldo";
-	String n_account;
-	double balance = 2000;
-
-	double withdraw(double withdraw_value)
+	// Vars ------------------------------------------
+	private String name = "Aderbaldo";
+	private String n_account;
+	private double balance = 2000;
+	// -----------------------------------------------
+	
+	
+	// Withdraw --------------------------------------
+	public double withdraw(double withdraw_value)
 	{
-		
+
 		balance -= (withdraw_value);
 		return (balance - withdraw_value);
-		
-	}
 
-	double deposit(double deposit_value)
+	}
+	// -----------------------------------------------
+
+	
+	// Deposit----------------------------------------
+	public double deposit(double deposit_value)
 	{
-		
+
 		balance += (deposit_value);
 		return (balance + deposit_value);
-		
-	}
 
-	double checkBalance()
+	}
+	// -----------------------------------------------
+
+	
+	// Account balance -------------------------------
+	public double getBalance()
 	{
-		
+
 		return balance;
-		
-	}
 
-	String checkName()
+	}
+	// -----------------------------------------------
+		
+	
+	// Account number --------------------------------
+	public void setAccount(String n_account)
 	{
 		
-		return name;
-		
+		this.n_account = n_account;
+	
 	}
 	
-	String changeName(String newName) 
+	public String getAccount() 
 	{
-		name = newName;
-		return name;
+		
+		return n_account;
+	
 	}
+	// -----------------------------------------------
 
+	
+	// Account Name ----------------------------------
+	public void setName(String name)
+	{
+		
+		this.name = name;
+	
+	}
+	
+	public String getName()
+	{
+
+		return name;
+
+	}
+	// -----------------------------------------------
+ 
 }
+//----------------------------------------------------

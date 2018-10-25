@@ -1,0 +1,81 @@
+package utility;
+
+
+// Bank ----------------------------------------------
+public class ContaCorrente
+{
+
+	// Vars ------------------------------------------
+	private String name = "Aderbaldo";
+	private String n_account;
+	private double balance = 2000;
+	// -----------------------------------------------
+	
+	
+	// Withdraw --------------------------------------
+	double withdraw(double withdraw_value)
+	{
+
+		balance -= (withdraw_value);
+		return (balance - withdraw_value);
+
+	}
+	// -----------------------------------------------
+
+	
+	// Deposit----------------------------------------
+	public double deposit(double deposit_value)
+	{
+
+		balance += (deposit_value);
+		return (balance + deposit_value);
+
+	}
+	// -----------------------------------------------
+
+	
+	// Account balance -------------------------------
+	public double getBalance()
+	{
+
+		return balance;
+
+	}
+	// -----------------------------------------------
+		
+	
+	// Account number --------------------------------
+	public void setAccount(String nAcc)
+	{
+		
+		n_account = nAcc;
+	
+	}
+	
+	public String getAccount() 
+	{
+		
+		return n_account;
+	
+	}
+	// -----------------------------------------------
+
+	
+	// Account Name ----------------------------------
+	public void setName(String newName)
+	{
+		
+		name = newName;
+	
+	}
+	
+	public String getName()
+	{
+
+		return name;
+
+	}
+	// -----------------------------------------------
+
+}
+//----------------------------------------------------
