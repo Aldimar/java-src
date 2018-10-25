@@ -6,7 +6,7 @@ public class ContaCorrente
 {
 
 	// Vars ------------------------------------------
-	private String name = "Cirleide";
+	private String name = "Aderbaldo";
 	private String n_account;
 	private double balance = 2000;
 	// -----------------------------------------------
